@@ -8,7 +8,7 @@ const config = getDefaultConfig(__dirname);
 config.resolver.alias = {
   ...config.resolver.alias,
   '.prisma/client/index-browser': '@prisma/client/index-browser',
-  '.prisma/client/react-native': '@prisma/client/react-native',
+  '.prisma/client/react-native': path.resolve(__dirname, 'node_modules/.prisma/client/index-browser.js'),
 };
 
 // Explicitly resolve react-native-quick-base64 for @prisma/react-native
