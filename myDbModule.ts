@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/react-native";
+import { PrismaClient } from "@prisma/client/index-browser";
 import { reactiveHooksExtension } from "@prisma/react-native";
 
 export const baseClient = new PrismaClient({
