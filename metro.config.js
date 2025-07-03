@@ -7,7 +7,7 @@ const config = getDefaultConfig(__dirname);
 // Add support for Prisma
 config.resolver.alias = {
   ...config.resolver.alias,
-  '.prisma/client/index-browser': '@prisma/client/index-browser',
+  '.prisma/client/index-browser': path.resolve(__dirname, 'node_modules/.prisma/client/index-browser.js'),
   '.prisma/client/react-native': path.resolve(__dirname, 'node_modules/.prisma/client/index-browser.js'),
 };
 
